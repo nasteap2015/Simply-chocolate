@@ -42,9 +42,9 @@ body{
 }
 
 .container{
-    max-width: 1136px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
@@ -92,8 +92,14 @@ body{
     padding-left: 40px;
     border-radius: 30px;
     background-color: rgba(17, 17, 17);
-    background-image: url(../images/first-section-background.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.40),
+        rgba(17, 17, 17, 0.40)
+    ),
+    url(../images/first-section-background.jpg);
     background-size: cover;
+    margin-bottom: 72px;
 }
 
 .hero-headline{
@@ -110,6 +116,8 @@ body{
     display: flex;
     gap: 14px;
     align-items: baseline;
+    font-size: 500;
+
 }
 
 .first-button{
@@ -118,6 +126,13 @@ body{
     background: #FD9222;
     color: rgba(255, 255, 255, 1);
     font-weight: 600;
+    margin-bottom: 40px;
+    box-shadow: none;
+}
+
+.first-button:hover{
+    background: #FCF1E0;
+    color: #FD9222;
 }
 
 .first-section-buttons{
@@ -132,6 +147,78 @@ body{
     padding: 14px 40px;
 }
 
+.making-button:hover{
+    border: 1px solid #FD9222;
+    color: #FD9222;
+}
+
 .footer-button{
     color: #FFF;
 }
+
+.footer-button:hover {
+    color: #FD9222;
+}
+
+.second-section{
+    background-color: #1E1823;
+
+}
+
+.second-section-container{
+    color: #FFF;
+    padding-top: 134px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.second-section-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+ .second-section-list-item{
+    width: calc((100% - 140px) / 3);
+    margin-bottom: 68px;
+
+ }
+
+ .second-section-list-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+ }
+
+ .second-section-list-content{
+    color: rgba(255, 255, 255, 0.70);
+ }
+
+ .third-section{
+    padding-top: 100px;
+ }
+
+ .third-section-headline{
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: 600;
+    text-align: center;
+    width: 411px;  
+    letter-spacing: -0.72px;
+ }
+
+ .orange-headline-part{
+    color: #FD9222;
+ }
