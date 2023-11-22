@@ -4,30 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple chocolate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="./index.html"><i>SIMPLY</i> CHOCOLATE</a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#making">How it's made</a></li>
-                <li><a href="#reviews">Chocolate is loved</a></li>
-            </ul>
-        </nav>
+    <header class="container">
+        <div class="header-container">
+            <a class="logo" href="./index.html"><i>SIMPLY</i> CHOCOLATE</a>
+            <nav>
+                <ul class="navigation-list">
+                    <li><a class="navigation-list-item" href="./index.html">Home</a></li>
+                    <li><a class="navigation-list-item" href="#making">How it's made</a></li>
+                    <li><a class="navigation-list-item" href="#reviews">Chocolate is loved</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>
-                Treat yourself or a loved one to
-            our finest ingredients for a moment
-            of pure delight!
-            </h1>
-            <button type="button">Buy now</button>
-            <ul>
-                <li><a href="#making">How it's made</a></li>
-                <li><a href="#footer">Scroll down</a></li>
-            </ul>
+        <section class="container">
+            <div class="first-section-container">
+                <h1 class="hero-headline">
+                    Treat yourself or a loved one to
+                    our finest ingredients for a moment
+                    of pure delight!
+                </h1>
+                <div class="buttons">
+                    <button class="first-button" type="button">Buy now</button>
+                    <ul class="first-section-buttons">
+                        <li><a class="making-button" href="#making">How it's made</a></li>
+                        <li><a class="footer-button" href="#footer">Scroll down</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Our benefits</h2>
@@ -150,7 +161,6 @@
                 <li><a href="#reviews">Chocolate is loved</a></li>
             </ul>
         </nav>
-
         <button type="button">Subscribe</button>
     </footer>
 </body>
