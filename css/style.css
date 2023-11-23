@@ -217,8 +217,253 @@ body{
     text-align: center;
     width: 411px;  
     letter-spacing: -0.72px;
+    margin: 0 auto 28px;
  }
 
  .orange-headline-part{
     color: #FD9222;
  }
+
+ .third-section-content{
+    text-align: center;
+    letter-spacing: -0.28px;
+    line-height: 1.28;
+    margin: 0 auto 50px;
+    width: 486px;
+ }
+
+ .chocolate-card{
+    padding: 28px 36px 28px 28px;
+    border-radius: 15px;
+    background-color: #FD9222;
+ }
+
+ .milk-card{
+    padding: 28px 36px 28px 28px;
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+    background-color: #FFF;
+ }
+
+ .hazelnut-card{
+    padding: 28px 36px 28px 28px;
+    border-radius: 15px;
+    background-color: #1E1823;
+ }
+
+ .coffee-card{
+    padding: 28px 36px 28px 28px;
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+    background: #FFF;
+ }
+
+ .third-section-list{
+    display: flex;
+    gap: 19px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+ }
+
+ .ingredient-card{
+    width: calc((100% - 57px) / 4);
+ }
+
+ .forth-section-headline{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: 600;
+    margin: 0 auto 50px;
+    text-align: center;
+ }
+
+ .forth-section-content{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+ }
+
+ .forth-section-text-content{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px
+ }
+
+ .forth-section-content-headline{
+    width: 350px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+ }
+
+ .forth-section-list-item{
+    padding: 8px;
+    letter-spacing: -0.28px;
+ }
+
+ .forth-section-list-item:not(:last-child){
+    margin-bottom: 24px;
+ }
+
+ .fifth-section-headline{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin: 0 auto 50px;
+ }
+
+ .flex-list{
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+ }
+
+ .flex-list-item{
+    width: calc((100% - 56px) / 3);
+ }
+
+ .rewiew-img{
+    width: 80px;
+    margin: 0   auto -38px;
+ }
+
+ .rewiew-content{
+    width: 100%;
+    padding: 56px 24px 0;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    box-shadow: 0px 9.04932px 100px 0px rgba(17, 17, 17, 0.03);
+ }
+
+ .rewiew-title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: center;
+    margin: 0 auto 24px;
+ }
+
+ .rewiew-text{
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+    margin-bottom: 24px;
+    height: 72px;
+ }
+
+ .fifth-section-button{
+    display: flex;
+    justify-content: center;
+ }
+
+ .rewiew-button{    
+    margin: 0 auto 100px;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FFF;
+ }
+
+ .rewiew-button:hover{
+    background-color: #FD9222;
+    color: #FFF;
+ }
+
+ .footer{
+    background-color: #1E1823;
+    color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+
+
+ .footer-flex-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 54px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+ .footer-slogan{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.56px;
+    width: 300px;
+ }
+
+ .slogan-orange-part{
+    color: #FD9222; 
+ }
+
+ .contact-flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+ }
+
+ .address-flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+ }
+
+ .address-link{
+    color: #FFF;
+ }
+
+.contact-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.navigation-list-item.footer{
+    padding: 0;
+    color: #FFF;
+}
+
+.footer-section-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+
+.subscribe-container{
+    display: flex;
+    gap: 8px;
+}
+
+input{
+    padding: 14px 24px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    background-color: #1E1823;
+    color: rgba(255, 255, 255, 0.30);
+    font-size: 18px;
+    letter-spacing: -0.36px;
+}
+
+.subscribe-button{
+    padding: 17px 40px;
+    border-radius: 100px;
+    background-color: #FD9222;
+    color: #FFF;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+
+
