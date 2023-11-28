@@ -48,6 +48,12 @@ body{
     margin: 0 auto;
 }
 
+.logo-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .logo{
     font-weight: 700;
     font-size: 18px;
@@ -102,7 +108,12 @@ body{
 }
 
 .socials-icon{
-   fill: #111111;
+   stroke: #111111;
+   fill:none;
+}
+
+.socials-icon:hover{
+   stroke: #fd9222;
 }
 
 .first-section-container{
