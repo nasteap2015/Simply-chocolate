@@ -87,6 +87,11 @@ body{
     gap: 24px;
 }
 
+.socials-icon{
+   fill: #111111;
+   background-color: #FAFAFA;
+}
+
 .first-section-container{
     padding-top: 381px;
     padding-left: 40px;
