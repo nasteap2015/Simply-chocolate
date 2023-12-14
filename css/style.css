@@ -636,12 +636,51 @@ input{
    color: rgba(64, 64, 64, 0.3);
 }
 
+.checkmark-container{
+   margin-bottom: 41.5px;
+}
+
 .privacy-policy-label{
    color: rgba(64, 64, 64, 0.60);
    letter-spacing: -0.02em;
+   display: flex;
+   gap: 12px;
+   align-items: center;
 }
 
 .privacy-policy-link{
    color: #FD9222;
 }
 
+.checkbox{
+   outline: transparent;
+}
+
+.checkmark{
+   width: 20px;
+   height: 20px;
+   border-radius: 6px;
+   border: 1px solid rgba(17, 17, 17, 0.14);
+   background-color: #FAFAFA;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.checkmark-icon{
+   fill:#fff;
+}
+
+.checkbox:checked+.privacy-policy-label>.checkmark{
+   background-color: #FD9222;
+   border-color: #FD9222;
+}
+
+.send-rewiew-button{
+   background-color: #FD9222;
+   border-radius: 100px;
+   border: none;
+   padding: 14px 40px;
+   color:#FAFAFA;
+   font-weight: 600;
+}

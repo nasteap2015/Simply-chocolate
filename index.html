@@ -220,7 +220,7 @@
                     </li>
                 </ul>
                 <div class="fifth-section-button">
-                    <button class="rewiew-button" type="button">Leave a review</button> 
+                    <button class="rewiew-button" type="button" rewiew-modal-open>Leave a review</button> 
                 </div>
             </div>
         </section>
@@ -253,9 +253,9 @@
         </div>
     </footer>
 
-    <div class="backdrop">
-        <div class="rewiew-modal-window">
-            <button type="button" class="close-button">
+    <div class="backdrop" rewiew-modal>
+        <div class="rewiew-modal-window ">
+            <button type="button" class="close-button" rewiew-modal-close>
                 <svg class="close-button-icon" width="28" height="28">
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
@@ -293,19 +293,22 @@
                     <label class="rewiew-modal-form-label" for="user-comment">Comment</label>
                     <textarea class="rewiew-modal-textarea" name="user-comment" id="user-comment" rows="4" placeholder="Enter text"></textarea>
                 </div>
-                <div>
-                    <input type="checkbox" id="privacy-checkbox">
-                    <label class="privacy-policy-label" for="privacy-checkbox">I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a></label>
-                    <span>
-                        <svg>
-                            <use></use>
-                        </svg>
-                    </span>
+                <div class="checkmark-container">
+                    <input class="checkbox visually-hidden" type="checkbox" id="privacy-checkbox">
+                    <label class="privacy-policy-label" for="privacy-checkbox">
+                        <span class="checkmark">
+                            <svg class="checkmark-icon" width="10" height="10">
+                                <use href="./images/sprite.svg#icon-agreement" </use>
+                            </svg>
+                        </span>
+                        <span>I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a></span>
+                    </label>
                 </div>
-                
+                <button class="send-rewiew-button" type="button">Send</button>
             </form> 
         </div>
         
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
