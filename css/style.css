@@ -331,8 +331,65 @@ body{
 
  .ingredient-card{
     width: calc((100% - 57px) / 4);
+    position: relative;
+    overflow: hidden;
  }
 
+ .overlay-container {
+    width: 100%px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+ }
+
+ .ingredient-card:hover>.overlay-container{
+   transform: translateY(0);
+ }
+
+ .overlay-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+ }
+
+ .overlay-buttons{
+   display: flex;
+   gap: 6px;
+   margin-bottom: 14px;
+ }
+
+ .overlay-first-button{
+   background-color: #FD9222;
+   border-radius: 35px;
+   border: none;
+   padding: 6px 16px;
+   color: #FFF;
+   font-size: 10px;
+   line-height: 1.2;
+   display: flex;
+   align-items: center;
+ }
+
+ .overlay-second-button{
+   font-size: 10px;
+   line-height: 1.2;
+   padding: 6px 16px;
+   border-radius: 35px;
+   background-color: #FFF;
+   border: 1px solid #FD9222;
+   display: flex;
+   align-items: center;
+ }
+
+ .overlay-text{
+   line-height: 1.28;
+   letter-spacing: -0.02em;
+ }
  .forth-section-headline{
     text-transform: uppercase;
     font-size: 24px;
@@ -685,22 +742,5 @@ input{
    font-weight: 600;
 }
 
-.ingredient-modal-window{
-   width: 270px;
-   padding: 20px;
-   border-radius: 15px;
-   background-color: #FFF;
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-}
 
-.modal-winfdow-title{
-   font-size: 18px;
-   font-weight: 600;
-   text-transform: uppercase;
-   letter-spacing: -0.03em;
-   margin-bottom: 8px;
-}
 
