@@ -684,3 +684,23 @@ input{
    color:#FAFAFA;
    font-weight: 600;
 }
+
+.ingredient-modal-window{
+   width: 270px;
+   padding: 20px;
+   border-radius: 15px;
+   background-color: #FFF;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.modal-winfdow-title{
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: -0.03em;
+   margin-bottom: 8px;
+}
+
