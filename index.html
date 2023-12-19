@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- 
     <header>
         <div class="container header-container">
             <div class="logo-container">
@@ -46,9 +47,10 @@
             </div>
         </div>
     </header>
+    -->
     <main>
-        <section>
-            <div class="container first-section-container">
+        <section class="container">
+            <div class="first-section-container">
                 <h1 class="hero-headline">
                     Treat yourself or a loved one to
                     our finest ingredients for a moment
@@ -56,21 +58,19 @@
                 </h1>
                 <div class="buttons">
                     <button class="first-button" type="button">Buy now</button>
-                    <ul class="first-section-buttons">
-                        <li><a class="making-button" href="#making">How it's made</a></li>
-                        <li><a class="footer-button" href="#footer">
-                            <p>scroll down</p>
-                            <div class="icon-elips">
-                                <svg class="scroll-icon" width="22" height="22">
-                                    <use href="./images/icons.svg#icon-angle"></use>
-                                </svg>
-                            </div>
-                         </a>
-                        </li>
-                    </ul>
+                    <a class="making-button" href="#making">How it's made</a>
                 </div>
+                <a class="footer-button" href="#footer">
+                    <p>scroll down</p>
+                    <div class="icon-elips">
+                        <svg class="scroll-icon" width="22" height="22">
+                            <use href="./images/icons.svg#icon-angle"></use>
+                        </svg>
+                    </div>
+                </a>    
             </div>
         </section>
+        <!--  
         <section class="second-section">
             <div class="container second-section-container">
                 <h2 class="visually-hidden">Our benefits</h2>
@@ -279,6 +279,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
     <footer class="footer">
         <div class="container">
@@ -307,7 +308,7 @@
             </div>
         </div>
     </footer>
-
+    
     <div class="backdrop is-hidden" rewiew-modal>
         <div class="rewiew-modal-window ">
             <button type="button" class="close-button" rewiew-modal-close>
@@ -364,7 +365,25 @@
         </div>
         
     </div>
-    <script src="./js/modal.js"></script>
 
-</body>
+    <div class="mobile-menu-container is-hidden">
+        <div class="mobile-menu-content">
+        <button type="button" class="menu-close-button">
+            <svg class="menu-close-button-icon" width="28" height="28">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">How it's made?</a></li>
+                <li><a href="">Chocolate is loved</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    -->
+    
+    <script src="./js/modal.js"></script>
+    </body>
 </html>

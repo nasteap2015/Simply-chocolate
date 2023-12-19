@@ -42,12 +42,12 @@ body{
 }
 
 .container{
-    max-width: 1158px;
+    max-width: 375px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
-
+/*
 .logo-container{
    display: flex;
    justify-content: center;
@@ -115,29 +115,42 @@ body{
 .socials-icon:hover{
    stroke: #fd9222;
 }
+  */
 
 .first-section-container{
-    padding-top: 381px;
-    padding-left: 40px;
+    padding-top: 395px;
+    padding-left: 20px;
     border-radius: 30px;
     background-color: rgba(17, 17, 17);
     background-image: linear-gradient(
         to bottom,
-        rgba(17, 17, 17, 0.40),
+        rgba(17, 17, 17, 0.00),
         rgba(17, 17, 17, 0.40)
     ),
-    url(../images/first-section-background.jpg);
+    url(../images/mob-backgroung-1x.jpg);
     background-size: cover;
     margin-bottom: 72px;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+   .first-section-container{
+   background-image: linear-gradient(to bottom,
+         rgba(17, 17, 17, 0.00),
+            rgba(17, 17, 17, 0.40)
+   ),
+   url(../images/mob-backgroung-2x.jpg);
+   }
+}
+
 .hero-headline{
     color: #FFF;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 1.21;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
     margin-bottom: 32px;
-    width: 484px;
 
 }
 
@@ -145,41 +158,32 @@ body{
     display: flex;
     gap: 14px;
     align-items: baseline;
-    font-size: 500;
-
 }
 
 .first-button{
-    padding: 14px 40px;
-    border-radius: 100px;
-    background: #FD9222;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 600;
-    margin-bottom: 40px;
-    box-shadow: none;
-}
-
-.first-button:hover{
-    background: #FCF1E0;
-    color: #FD9222;
-}
-
-.first-section-buttons{
-    display: flex;
-    gap: 585px;
+   width: 120px;
+   padding: 12px 28px;
+   border-radius: 100px;
+   border: none;
+   background: #FD9222;
+   color: rgba(255, 255, 255, 1);
+   font-weight: 600;
+   margin-bottom: 40px;
+   box-shadow: none;
 }
 
 .making-button{
-    color: #FFF;
-    border-radius: 100px;
-    border: 1px solid #FFF;
-    padding: 14px 40px;
+   width: 159px;
+   color: #FFF;
+   border-radius: 100px;
+   border: 1px solid #FFF;
+   padding: 12px 28px;
+   font-weight: 600;
+   text-align: center;
+   line-height: 1.21;
 }
 
-.making-button:hover{
-    border: 1px solid #FD9222;
-    color: #FD9222;
-}
+
 
 .footer-button{
     color: #FFF;
@@ -212,6 +216,17 @@ body{
 
 .footer-button:hover .scroll-icon{
    fill: #FFFFFF;
+}
+/* 
+
+.first-button:hover {
+   background: #FCF1E0;
+   color: #FD9222;
+}
+
+.making-button:hover {
+   border: 1px solid #FD9222;
+   color: #FD9222;
 }
 
 .second-section{
@@ -617,7 +632,6 @@ input{
 }
 
 .close-button {
-   border-radius: 50%;
    background-color: #FAFAFA;;
    border: none;
    position: absolute;
@@ -742,5 +756,47 @@ input{
    font-weight: 600;
 }
 
+.mobile-menu-container{
+   width: 100%;
+   height: 100%;
+   background-color: #1E1823;
+   position: fixed;
+   top: 0;
+   z-index: 999;
+   visibility: visible;
+   pointer-events: auto;
+
+}
+
+.mobile-menu-container.is-hidden {
+   visibility: hidden;
+   pointer-events: none;
+}
+
+.mobile-menu-content{
+   position: relative;
+   max-width: 375px;
+   margin: 0 auto;
+   padding-top: 136px;
+   padding-left: 48px;
+}
+
+.menu-close-button {
+   border: none;
+   background-color: transparent;
+   position: absolute;
+   padding: 0;
+   cursor: pointer;
+   top: 20px;
+   right: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.menu-close-button-icon{
+   stroke: #FFFFFF;
+}   
+ */
 
 
